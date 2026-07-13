@@ -41,7 +41,7 @@ body {
   color: #1a1a1a;
 }
 
-.top form div {
+.top form div.inputs {
   width: 100%;
   display: flex;
   gap: 10px;
@@ -157,17 +157,17 @@ input:focus:invalid {
 }
 
 span.min,
-span.min + .degree {
+span.min+.degree {
   color: blue;
 }
 
 span.max,
-span.max + .degree {
+span.max+.degree {
   color: red;
 }
 
-.min + .degree,
-.max + .degree {
+.min+.degree,
+.max+.degree {
   position: absolute;
   top: 0;
   right: -8px;
