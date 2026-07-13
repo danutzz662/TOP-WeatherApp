@@ -9,7 +9,9 @@ body {
   background-color: darkslategray;
   display: flex;
   align-items: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   justify-content: center;
 }
 
@@ -19,6 +21,9 @@ body {
   background-color: azure;
   border-radius: 16px;
   padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .top {
@@ -82,4 +87,57 @@ input:focus:invalid {
 
 .error.active {
   padding: 0.3em;
+}
+
+.temp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+}
+
+.left .left-top {
+  position: absolute;
+  gap: 16px;
+  font-size: 0.8rem;
+  display: flex;
+}
+
+.left .left-main {
+  position: relative;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 6rem;
+  width: inherit;
+
+}
+
+.min {
+  color: blue;
+  position: relative;
+}
+
+.max {
+  color: red;
+  position: relative;
+}
+
+.min .degree,
+.max .degree {
+  position: absolute;
+  top: 0;
+  right: -8px;
+  font-size: 0.5rem;
+}
+
+.left-main .degree {
+  position: absolute;
+  top: 15px;
+  right: -15px;
+  font-size: 1.875rem;
 }

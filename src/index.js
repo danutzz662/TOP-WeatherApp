@@ -19,7 +19,6 @@ form.addEventListener("submit", async (event) => {
     return;
   }
   const data = await getData(formInput.value);
-  console.log(data);
 });
 
 function showErrors() {
@@ -43,3 +42,4 @@ async function getData(name) {
   }
 }
 
+function renderWeather(data) {}
