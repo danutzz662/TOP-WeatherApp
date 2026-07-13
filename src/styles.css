@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: darkslategray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-container {
+  height: 500px;
+  width: 500px;
+  background-color: azure;
+  border-radius: 16px;
+}
