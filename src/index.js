@@ -35,7 +35,7 @@ async function getData(name) {
   if (!name) return;
   try {
     const returnedData = await fetch(
-      `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${name}?key=XBX8ZQSME2GSNVSYH29NAYSQ3`,
+      `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${name}?unitGroup=metric&key=XBX8ZQSME2GSNVSYH29NAYSQ3&contentType=json`,
     );
     return await returnedData.json();
   } catch (error) {
