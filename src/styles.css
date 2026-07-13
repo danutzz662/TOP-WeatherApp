@@ -9,6 +9,7 @@ body {
   background-color: darkslategray;
   display: flex;
   align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   justify-content: center;
 }
 
@@ -17,4 +18,68 @@ body {
   width: 500px;
   background-color: azure;
   border-radius: 16px;
+  padding: 10px 20px;
+}
+
+.top {
+  width: 100%;
+}
+
+.top form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.top form input {
+  color: black;
+  padding: 5px;
+  height: 32px;
+  border: 1px solid #333333;
+  background-color: rgb(210, 225, 238);
+}
+
+input:invalid {
+  border-color: #990000;
+  background-color: #ffdddd;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+.top form div {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+}
+
+.top form div input[type="text"] {
+  flex: 1;
+}
+
+.top form div input[type="submit"] {
+  border-radius: 8px;
+  cursor: pointer;
+  width: 60px;
+}
+
+.top form input[type="text"]::placeholder {
+  color: rgb(105, 105, 105);
+}
+
+.top form p {
+  font-size: 1.3rem;
+}
+
+.error {
+  width: calc(100% - 60px - 16px);
+  background-color: #990000;
+  font-size: 80%;
+  border-radius: 0 0 5px 5px;
+  color: white;
+}
+
+.error.active {
+  padding: 0.3em;
 }
