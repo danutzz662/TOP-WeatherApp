@@ -1,5 +1,5 @@
 {
-  "name": "todoapp",
+  "name": "weatherapp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,7 +18,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "css-loader": "^7.1.4",
-    "eslint": "^8.57.1",
+    "eslint": "^10.7.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-prettier": "^5.5.6",
