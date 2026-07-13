@@ -23,7 +23,7 @@ body {
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
 }
 
 .top {
@@ -90,7 +90,7 @@ input:focus:invalid {
 }
 
 .temp {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
 }
@@ -111,10 +111,9 @@ input:focus:invalid {
 
 .left .left-main {
   position: relative;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 6rem;
   width: inherit;
-
 }
 
 .min {
@@ -140,4 +139,37 @@ input:focus:invalid {
   top: 15px;
   right: -15px;
   font-size: 1.875rem;
+}
+
+.humidity-cov,
+.uv-wind {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.humidity-cov .hum-title,
+.humidity-cov .cov-title,
+.uv-wind .uv-title,
+.uv-wind .wind-title {
+  font-size: 1.2rem;
+}
+
+.humidity-cov .info,
+.uv-wind .info {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.description {
+  width: 100%;
+  flex: 1;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  text-align: center;
 }
