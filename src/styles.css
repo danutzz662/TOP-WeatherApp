@@ -41,13 +41,13 @@ body {
   color: #1a1a1a;
 }
 
-.top form div.inputs {
+.top form .inputs {
   width: 100%;
   display: flex;
   gap: 10px;
 }
 
-.top form input {
+.top form .inputs input {
   color: #1a1a1a;
   padding: 10px 14px;
   height: 40px;
@@ -65,11 +65,11 @@ body {
   color: black;
 }
 
-.top form input[type="text"]::placeholder {
+.top form .inputs input[type="text"]::placeholder {
   color: #747779;
 }
 
-.top form input:focus {
+.top form .inputs input:focus {
   outline: none;
   border-color: #7ba8b8;
   background-color: #ffffff;

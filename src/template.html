@@ -13,20 +13,18 @@
     <div class="weather-container">
       <div class="top">
         <form novalidate>
-          <div>
-            <label for="input">Enter the city you want to check *:</label>
-            <div class="inputs">
-              <input
-                type="text"
-                name="input"
-                id="input"
-                required
-                placeholder="Enter the city here..."
-                pattern="[a-zA-Z ]+" />
-              <input type="submit" value="Search" />
-            </div>
-            <span class="error" aria-live="polite"></span>
+          <label for="input">Enter the city you want to check *:</label>
+          <div class="inputs">
+            <input
+              type="text"
+              name="input"
+              id="input"
+              required
+              placeholder="Enter the city here..."
+              pattern="[a-zA-Z ]+" />
+            <input type="submit" value="Search" />
           </div>
+          <span class="error" aria-live="polite"></span>
         </form>
       </div>
       <div class="loader" style="display: none"></div>
